@@ -33,6 +33,8 @@ homeButton.addEventListener('click', homePageAppear);
 aboutMeButton.addEventListener('click', aboutMePageAppear);
 // PROJECTS
 projectsButton.addEventListener('click', projectsPageAppear);
+// CONTACT
+contactButton.addEventListener('click', contactPageAppear);
 
 // Functions
 // Brings the nav page up and makes other pages hide
@@ -41,6 +43,7 @@ function navPageAppear() {
 	mainPage.classList.add('hidden');
 	aboutMePage.classList.add('hidden');
 	projectsPage.classList.add('hidden');
+    contactPage.classList.add('hidden');
 }
 
 // Brings the home page up and makes the nav page hide
