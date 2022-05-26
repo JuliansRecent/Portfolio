@@ -1,18 +1,35 @@
+// Let
+// Nav page and it's nav button
+const navPage = document.querySelector('.nav-page');
+const navButton = document.querySelector('.nav-button');
+// Main  page and it's nav button
+const mainPage = document.querySelector('.name-and-title-container');
+const homeButton = document.querySelector('.home-link');
+// About me page and it's nav button
+const aboutMePage = document.querySelector('.about-me-page');
+const aboutMeButton = document.querySelector('.about-me-link');
+// Resume nav button
+const resumeButton = document.querySelector('.resume-link');
 // Const
 
-let navButtonEl = document.querySelector('.nav-button');
+// Event Listeners
+navButton.addEventListener('click', navPageAppear);
+homeButton.addEventListener('click', homePageAppear);
+aboutMeButton.addEventListener('click', aboutMePageAppear);
 
-$('.nav_button').click(function (e) {
-	$('.modal').addClass('active');
-	e.preventDefault();
-});
+// Functions
+function navPageAppear() {
+    navPage.classList.remove('hidden');
+    mainPage.classList.add('hidden');
+    aboutMePage.classList.add('hidden');
+};
 
-$('.modal').click(function (e) {
-	$('.modal').removeClass('active');
-	e.preventDefault();
-});
+function homePageAppear() {
+    mainPage.classList.remove('hidden');
+    navPage.classList.add('hidden');
+}
 
-// Lets
-// Class/objects
-// Doms
-// Function
+function aboutMePageAppear() {
+	aboutMePage.classList.remove('hidden');
+	navPage.classList.add('hidden');
+}

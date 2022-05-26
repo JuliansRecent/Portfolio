@@ -23,15 +23,17 @@ body, html {
 h1 {
     color: #6f84a1;
     font-size: 6em;
+
 }
 
 h2 {
     color: #7d94b5;
     font-size: 2em;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .hamburger-icon-container {
-    height: 100vh;
+    height: 2.5vh;
     order: 1;
     position: absolute;
     top: 2em;
@@ -55,4 +57,47 @@ input[type="reset"] {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav-page {
+    background-color: #cbd7ab;
+}
+
+.nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-items {
+    font-size: 3em;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.projects-page {
+        height: 100vh;            
+        display: flex;            
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+}
+
+.hidden {
+    display: none;
+    width: 100vh;
+    height: 100vh;
+    transition: opacity 5s;
 }
