@@ -40,7 +40,7 @@ function navPageAppear() {
 	navPage.classList.remove('hidden');
 	mainPage.classList.add('hidden');
 	aboutMePage.classList.add('hidden');
-    projectsPage.classList.add('hidden');
+	projectsPage.classList.add('hidden');
 }
 
 // Brings the home page up and makes the nav page hide
@@ -63,6 +63,6 @@ function projectsPageAppear() {
 
 // Brings the contact page up and makes the nav page hide
 function contactPageAppear() {
-    contactPage.classList.remove('hidden');
-    navPage.classList.add('hidden')
+	contactPage.classList.remove('hidden');
+	navPage.classList.add('hidden');
 }
