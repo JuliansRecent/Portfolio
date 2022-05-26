@@ -2,34 +2,67 @@
 // Nav page and it's nav button
 const navPage = document.querySelector('.nav-page');
 const navButton = document.querySelector('.nav-button');
+
 // Main  page and it's nav button
 const mainPage = document.querySelector('.name-and-title-container');
 const homeButton = document.querySelector('.home-link');
+
 // About me page and it's nav button
 const aboutMePage = document.querySelector('.about-me-page');
 const aboutMeButton = document.querySelector('.about-me-link');
+
 // Resume nav button
 const resumeButton = document.querySelector('.resume-link');
+
+// Projects page and it's nav button
+const projectsPage = document.querySelector('.projects-page');
+const projectsButton = document.querySelector('.projects-link');
+
+// Contact page and it's nav button
+const contactPage = document.querySelector('.contact-page');
+const contactButton = document.querySelector('.contact-link');
+
 // Const
 
 // Event Listeners
+// NAV
 navButton.addEventListener('click', navPageAppear);
+// HOME
 homeButton.addEventListener('click', homePageAppear);
+// ABOUT ME
 aboutMeButton.addEventListener('click', aboutMePageAppear);
+// PROJECTS
+projectsButton.addEventListener('click', projectsPageAppear);
 
 // Functions
+// Brings the nav page up and makes other pages hide
 function navPageAppear() {
-    navPage.classList.remove('hidden');
-    mainPage.classList.add('hidden');
-    aboutMePage.classList.add('hidden');
-};
-
-function homePageAppear() {
-    mainPage.classList.remove('hidden');
-    navPage.classList.add('hidden');
+	navPage.classList.remove('hidden');
+	mainPage.classList.add('hidden');
+	aboutMePage.classList.add('hidden');
+    projectsPage.classList.add('hidden');
 }
 
+// Brings the home page up and makes the nav page hide
+function homePageAppear() {
+	mainPage.classList.remove('hidden');
+	navPage.classList.add('hidden');
+}
+
+// Brings the about me page up and makes the nav page hide
 function aboutMePageAppear() {
 	aboutMePage.classList.remove('hidden');
 	navPage.classList.add('hidden');
+}
+
+// Brings the projects page up and makes the nav page hide
+function projectsPageAppear() {
+	projectsPage.classList.remove('hidden');
+	navPage.classList.add('hidden');
+}
+
+// Brings the contact page up and makes the nav page hide
+function contactPageAppear() {
+    contactPage.classList.remove('hidden');
+    navPage.classList.add('hidden')
 }

@@ -1,53 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/reset.css">
-    <link rel="stylesheet" href="/Styles/style.css">
-    <title>Julian Segura's Portfolio</title>
-    <script src="/JavaScript/script.js" defer></script>
-</head>
-<body>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/Styles/reset.css" />
+		<link rel="stylesheet" href="/Styles/style.css" />
+		<title>Julian Segura's Portfolio</title>
+		<script src="/JavaScript/script.js" defer></script>
+	</head>
+	<body>
+		<!-- Hamburger icon -->
+		<button class="hamburger-icon-container nav-button">
+			<img
+				src="/Assets/Hamburger_icon.svg.png"
+				alt="Hamburger Icon"
+				class="hamburger-icon"
+			/>
+		</button>
 
-    <!-- Hamburger icon -->
-    <button class="hamburger-icon-container nav-button"> <img src="/Assets/Hamburger_icon.svg.png" alt="Hamburger Icon" class="hamburger-icon"></button>
+		<!-- Name and title -->
+		<div class="name-and-title-container">
+			<h1>Julian Segura</h1>
+			<h2>Full Stack Developer</h2>
+		</div>
 
-    <!-- Name and title -->
-    <div class="name-and-title-container">
-        <h1>Julian Segura</h1>
-        <h2>Full Stack Developer</h2>
-    </div>
+		<!-- Nav page -->
+		<section class="nav-page hidden">
+			<ul class="nav">
+				<li class="nav-items home-link"><a>Home</a></li>
+				<li class="nav-items about-me-link"><a>About Me</a></li>
+				<li class="nav-items resume-link"><a>Resume</a></li>
+				<li class="nav-items projects-link"><a>Projects</a></li>
+				<li class="nav-items contact-link"><a>Contact</a></li>
+			</ul>
+		</section>
 
-    <!-- Nav page -->
-    <section class="nav-page hidden">
-            <ul class="nav">
-                <li class="nav-items home-link"><a>Home</a></li>
-                <li class="nav-items about-me-link"><a>About Me</a></li>
-                <li class="nav-items resume-link"><a>Resume</a></li>
-                <li class="nav-items projects-link"><a>Projects</a></li>
-                <li class="nav-items contact-link"><a>Contact</a></li>
-            </ul>
-    </section>
+		<!-- About me page -->
+		<section class="about-me-page hidden">
+			<h2 class="who-am-i">Who am I?</h2>
+            <br>
+			<p class="brand-statement">
+				Coming from the medical field, with attention to detail, and a creative
+				mind. I strive to help build innovative technologies for the future. I
+				love working with others to bring a common goal together and I bring
+				this to my work as a software engineer.
+			</p>
+            <br>
+			<p class="brand-statement">
+				Just to tell you a little about myself, I’m originally from Fresno,
+				California and I was home-schooled for the last 2 years of highschool to
+				play competitive golf. I really loved the sense of community that you
+				get at a golf course and on a golf team, and almost decided to play golf
+				on a college golf team, but I also had ambitions to become a doctor. I
+				couldn’t do both due to the time requirements they require, so I decided
+				to go the doctor route. Shortly after enrolling as a biology major, I
+				earned a position as a medical scribe, documenting patients charts
+				alongside doctors. This position taught me a lot about having attention
+				to detail, and maintaining professionalism while building relationships
+				with team members, but after getting to know a lot of my doctor
+				co-workers they disclosed that the medical system was being overtaken by
+				corporations and was no longer for the people. This along with other
+				negative traits shown in the medical field drew me to chase a position
+				with more freedom, and better culture like the one I found in the
+				golfing community. This led me to software engineering. It allows me to
+				work in an amazing community of people, while still doing meaningful
+				work, with freedom to do other things I love, which is what I strive
+				for.
+			</p>
+		</section>
 
-    <section class="about-me-page hidden">
-        <h3 class="who-am-i">Who am I?</h3>
-        <p class="brand-statement">Coming from the medical field, with attention to detail, and a creative mind. I strive to help build innovative technologies for the future. I love working with others to bring a common goal together and I bring this to my work as a software engineer.</p>
+		<!-- Resume page placeholder -->
+		<section class="resume-page hidden"></section>
 
-        <p> Just to tell you a little about myself, I’m originally from Fresno, California and I was home-schooled for the last 2 years of highschool to play competitive golf. I really loved the sense of community that you get at a golf course and on a golf team, and almost decided to play golf on a college golf team, but I also had ambitions to become a doctor. I couldn’t do both due to the time requirements they require, so I decided to go the doctor route. Shortly after enrolling as a biology major, I earned a position as a medical scribe, documenting patients charts alongside doctors. This position taught me a lot about having attention to detail, and maintaining professionalism while building relationships with team members, but after getting to know a lot of my doctor co-workers they disclosed that the medical system was being overtaken by corporations and was no longer for the people. This along with other negative traits shown in the medical field drew me to chase a position with more freedom, and better culture like the one I found in the golfing community. This led me to software engineering. It allows me to work in an amazing community of people, while still doing meaningful work, with freedom to do other things I love, which is what I strive for.
-</p>
-    </section>
-    <section class="resume-page hidden"></section>
-    <section class="projects-page hidden">
-        <h3 class="projects-title">My Projects</h3>
-        <ul class="project-links"><a href="">Tamagotchi Game</a></ul>
-        <ul class="project-links"><a href="">Tic-Tac-Toe Game</a></ul>
-        <ul class="project-links"><a href="">Space Invaders Game</a></ul>
-    </section>
-</body>
+		<!-- Projects page -->
+		<section class="projects-page hidden">
+			<h2 class="projects-title">My Projects</h2>
+			<ul class="project-links">
+				<div class="tamagotchi-icon"><img src="" alt="tamagotchi-icon" /></div>
+			</ul>
+			<ul class="project-links">
+				<div class="tic-tac-toe-icon">
+					<img src="" alt="tic-tac-toe-icon" />
+				</div>
+			</ul>
+			<ul class="project-links">
+				<div class="space-invaders-icon">
+					<img src="" alt="space-invaders-icon" />
+				</div>
+			</ul>
+		</section>
+	</body>
 </html>

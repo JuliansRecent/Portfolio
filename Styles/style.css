@@ -11,15 +11,6 @@ body, html {
     align-items: center;
 }
 
-.name-and-title-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-}
-
 h1 {
     color: #6f84a1;
     font-size: 6em;
@@ -31,7 +22,17 @@ h2 {
     font-size: 2em;
     font-family: 'Titillium Web', sans-serif;
 }
+/* Home page */
+.name-and-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
 
+/* Hamburger icon/Nav icon */
 .hamburger-icon-container {
     height: 2.5vh;
     order: 1;
@@ -68,6 +69,7 @@ input[type="reset"] {
     }
 }
 
+/* Nav page */
 .nav-page {
     background-color: #cbd7ab;
 }
@@ -86,18 +88,43 @@ input[type="reset"] {
     font-family: 'Titillium Web', sans-serif;
 }
 
+/* About me page */
+.about-me-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 85vh;
+}
+
+.who-am-i {
+    color: #6f84a1;
+    font-size: 3em;
+}
+
+.brand-statement {
+    font-size: 1.3em;
+}
+
+/* Projects page */
 .projects-page {
-        height: 100vh;            
-        display: flex;            
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
+    height: 100vh;            
+    display: flex;            
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.projects-title {
+    font-size: 3em;
+
 }
 
 .hidden {
     display: none;
     width: 100vh;
     height: 100vh;
-    transition: opacity 5s;
+    transition: fadeIn;
 }
