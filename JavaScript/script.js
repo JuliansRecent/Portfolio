@@ -18,10 +18,11 @@ const resumeButton = document.querySelector('.resume-link');
 const projectsPage = document.querySelector('.projects-page');
 const projectsButton = document.querySelector('.projects-link');
 
-// Contact page and it's nav button
+// Contact page, it's nav button, send button, and form
 const contactPage = document.querySelector('.contact-page');
 const contactButton = document.querySelector('.contact-link');
-
+const sendButton = document.querySelector('.send-button');
+const formInputs = document.querySelectorAll('.inputs');
 // Const
 
 // Event Listeners
@@ -35,7 +36,8 @@ aboutMeButton.addEventListener('click', aboutMePageAppear);
 projectsButton.addEventListener('click', projectsPageAppear);
 // CONTACT
 contactButton.addEventListener('click', contactPageAppear);
-
+// SEND-BUTTON
+sendButton.addEventListener('click', resetForm);
 // Functions
 // Brings the nav page up and makes other pages hide
 function navPageAppear() {
@@ -43,7 +45,7 @@ function navPageAppear() {
 	mainPage.classList.add('hidden');
 	aboutMePage.classList.add('hidden');
 	projectsPage.classList.add('hidden');
-    contactPage.classList.add('hidden');
+	contactPage.classList.add('hidden');
 }
 
 // Brings the home page up and makes the nav page hide
@@ -68,4 +70,11 @@ function projectsPageAppear() {
 function contactPageAppear() {
 	contactPage.classList.remove('hidden');
 	navPage.classList.add('hidden');
+}
+
+// Resets the form after the submit button is clicked
+function resetForm() {
+	setTimeout(function() {
+        this.form.reset();
+    }, 2000);
 }
