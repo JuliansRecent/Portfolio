@@ -1,5 +1,5 @@
 // Let
-
+// Const
 // Nav page and it's nav button
 const navPage = document.querySelector('.nav-page');
 const navButton = document.querySelector('.nav-button');
@@ -24,7 +24,7 @@ const contactPage = document.querySelector('.contact-page');
 const contactButton = document.querySelector('.contact-link');
 const sendButton = document.querySelector('.send-button');
 const formInputs = document.querySelectorAll('.inputs');
-// Const
+
 
 // Event Listeners
 // NAV
@@ -77,4 +77,3 @@ function contactPageAppear() {
 function clearForm() {
     formInputs.value = '';
 }
-

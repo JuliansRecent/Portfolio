@@ -171,6 +171,11 @@ input[type="reset"] {
     color : #6f84a1;
 }
 
+.projects-wrapper {
+    display: flex;
+    gap: .5em;
+}
+
 .project-titles {
     font-size: 1.7em;
     color: #a84b67;
@@ -181,6 +186,10 @@ input[type="reset"] {
     width: 70vh;
     display: flex;
     justify-content: space-between;
+}
+
+.game-container {
+    height: 12em;
 }
 
 .tamagotchi-li {
@@ -219,6 +228,24 @@ input[type="reset"] {
     text-align: center;
     font-size: 1.1em;
     color: #000000;
+}
+
+.left-arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.right-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
 }
 /* Contact page */
 .contact-page {
@@ -261,7 +288,20 @@ input[type="reset"] {
     justify-content: center;
     padding: 1em 2em;
 }
+/* Footer */
+.socials-container {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+}
 
+.social-icons {
+    height: 2.5em;
+    background-color: #ffffff;
+    border: 0.1em #ffffff solid;
+}
 
 
 .hidden {

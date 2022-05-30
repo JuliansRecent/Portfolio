@@ -58,27 +58,6 @@
 				love working with others to bring a common goal together and I bring
 				this to my work as a software engineer.
 			</p>
-			<br />
-			<p class="brand-statement">
-				I’m originally from Fresno, California and I was home-schooled for the
-				last 2 years of highschool to play competitive golf. I really loved the
-				sense of community that you get at a golf course and on a golf team, and
-				almost decided to play golf on a college golf team, but I also had
-				ambitions to become a doctor. I couldn’t do both due to the time
-				requirements they require, so I decided to go the doctor route. Shortly
-				after enrolling as a biology major, I earned a position as a medical
-				scribe, documenting patients charts alongside doctors. This position
-				taught me a lot about having attention to detail, and maintaining
-				professionalism while building relationships with team members, but
-				after getting to know a lot of my doctor co-workers they disclosed that
-				the medical system was being overtaken by corporations and was no longer
-				for the people. This along with other negative traits shown in the
-				medical field drew me to chase a position with more freedom, and better
-				culture like the one I found in the golfing community. This led me to
-				software engineering. It allows me to work in an amazing community of
-				people, while still doing meaningful work, with freedom to do other
-				things I love, which is what I strive for.
-			</p>
 		</section>
 
 		<!-- Resume page placeholder -->
@@ -87,28 +66,32 @@
 		<!-- Projects page -->
 		<section class="projects-page hidden">
 			<h2 class="projects-title">My Projects</h2>
-			<ul class="project-links">
-				<li class="tamagotchi-li">
-					<div class="tamagotchi-icon">
-						<p class="project-titles">Tamagotchi</p>
-						<img src="/Assets/tamagotchi-preview.png" alt="tamagotchi-icon" />
-						<p class="tamagotchi-description">
-							A simple Tamagotchi game where you can interact with your own
-							tamagotchi that changes as it gets older.
-						</p>
-					</div>
-				</li>
+            <div class="projects-wrapper">
+                <button class="change-project"><i class="left-arrow"></i></button>
+                <ul class="project-links">
+                    <li class="tamagotchi-li">
+                        <div class="slide tamagotchi-icon">
+                            <p class="project-titles">Tamagotchi</p>
+                            <a class="game-container" href="#"><img src="/Assets/tamagotchi-preview.png" alt="tamagotchi icon" /></a>
+                            <p class="tamagotchi-description">
+                                A simple Tamagotchi game where you can interact with your own
+                                tamagotchi that changes as it gets older.
+                            </p>
+                        </div>
+                    </li>
 
-				<li class="tic-tac-toe-li">
-					<div class="tic-tac-toe-icon">
-						<p class="project-titles">Tic-Tac-Toe</p>
-						<img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon" />
-						<p class="tic-tac-toe-description">
-							A Tic-Tac-Toe game that allows you to choose your own characters.
-						</p>
-					</div>
-				</li>
-			</ul>
+                    <li class="slide tic-tac-toe-li">
+                        <div class="tic-tac-toe-icon">
+                            <p class="project-titles">Tic-Tac-Toe</p>
+                            <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon" alt="Tic-Tac-Toe icon"/></a>
+                            <p class="tic-tac-toe-description">
+                                A Tic-Tac-Toe game that allows you to choose your own characters.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="change-project"><i class="right-arrow"></i></button>
+            </div>
 		</section>
 
         <!-- Contact page -->
@@ -141,7 +124,13 @@
             
             </div>
         </section>
-        <footer>hey</footer>
+        <footer>
+            <div class="socials-container">
+                <a href="www.linkedin.com/in/julian-segura12"><img class="social-icons" src="/Assets/LinkedIn-icon.png" alt="LinkedIn icon"></a>
+                <a href="https://twitter.com/JuliansRecent"><img class="social-icons" src="/Assets/Twitter-icon.png" alt="Twitter icon"></a>
+                <a href="https://github.com/JuliansRecent"><img class="social-icons" src="/Assets/Github-icon.png" alt="Github icon"></a>
+            </div>
+        </footer>
         <!-- 
             AJAX integration from FormSpree to accept forms
             https://formspree.io/forms/xlezznnw/integration 
