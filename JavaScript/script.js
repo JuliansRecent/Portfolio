@@ -1,4 +1,5 @@
 // Let
+
 // Nav page and it's nav button
 const navPage = document.querySelector('.nav-page');
 const navButton = document.querySelector('.nav-button');
@@ -37,7 +38,7 @@ projectsButton.addEventListener('click', projectsPageAppear);
 // CONTACT
 contactButton.addEventListener('click', contactPageAppear);
 // SEND-BUTTON
-sendButton.addEventListener('click', resetForm);
+sendButton.addEventListener('click', clearForm);
 // Functions
 // Brings the nav page up and makes other pages hide
 function navPageAppear() {
@@ -73,8 +74,7 @@ function contactPageAppear() {
 }
 
 // Resets the form after the submit button is clicked
-function resetForm() {
-	setTimeout(function() {
-        this.form.reset();
-    }, 2000);
+function clearForm() {
+    formInputs.value = '';
 }
+
