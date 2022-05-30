@@ -10,12 +10,13 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 h1 {
     color: #6f84a1;
     font-size: 6em;
-
+    text-align: center;
 }
 
 h2 {
@@ -36,16 +37,14 @@ a {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
+    justify-content: center;
     gap: 2em;
-    height: 55vh;
-    width: 60vh;
-    margin-top: 2em;
-    margin-left: 2.1em;
     padding: 20px;
     border: 0.13em solid #000;
     border-radius: 8px;
+    max-width: 500px;
+    height: 63vh;
 }
 
 input, textarea {
@@ -54,7 +53,7 @@ input, textarea {
         border: 0;
         border-bottom: .1em solid gray;
         outline: 0;
-        font-size: 1.3rem;
+        font-size: .8em;
         color: black;
         padding: 7px 0;
         background: transparent;
@@ -64,7 +63,6 @@ footer {
     background-color: black;
     width: 100%;
     position: fixed;
-    left: 0;
     bottom: 0;
     height: 3em;
     opacity: 70%;
@@ -87,7 +85,6 @@ footer {
     top: 2em;
     right: 2em;
     display: flex;
-
 }
 
 .hamburger-icon {
@@ -154,6 +151,7 @@ input[type="reset"] {
 .brand-statement {
     font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 /* Projects page */
@@ -173,7 +171,7 @@ input[type="reset"] {
 
 .projects-wrapper {
     display: flex;
-    gap: .5em;
+    gap: 0.5em;
 }
 
 .project-titles {
@@ -185,7 +183,8 @@ input[type="reset"] {
     height: 13em;
     width: 60vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1em;
 }
 
 .game-container {
@@ -246,16 +245,26 @@ input[type="reset"] {
 }
 /* Contact page */
 .contact-page {
-    width: 90vh;
-    height: 100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contact-page-container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
 }
 
 .contact-title-container {
     display: flex;
     flex-direction: column;
-    margin-top: 3em;
-    margin-left: 2em;
-    gap: 1em;
 }
 
 .contact-me-title {

@@ -20,15 +20,13 @@ const projectsPage = document.querySelector('.projects-page');
 const projectsButton = document.querySelector('.projects-link');
 const previousButton = document.querySelector('.previous');
 const nextButton = document.querySelector('.next');
-const projects = document.querySelectorAll('.project-lis')
-
+const projects = document.querySelectorAll('.project-lis');
 
 // Contact page, it's nav button, send button, and form
 const contactPage = document.querySelector('.contact-page');
 const contactButton = document.querySelector('.contact-link');
 const sendButton = document.querySelector('.send-button');
 const formInputs = document.querySelectorAll('.inputs');
-
 
 // Event Listeners
 // NAV
@@ -91,25 +89,23 @@ function currentProject(n) {
 }
 
 function showProjects(n) {
-    let i;
+	let i;
 	if (n > projects.length) {
 		projectIndex = 1;
 	}
 	if (n < 1) {
 		projectIndex = projects.length;
 	}
-    for (i = 0; i < projects.length; i++) {
+	for (i = 0; i < projects.length; i++) {
 		projects[i].style.display = 'none';
 	}
-    projects[projectIndex - 1].style.display = 'flex';
-    
+	projects[projectIndex - 1].style.display = 'flex';
 }
 
-console.log(projectIndex)
-console.log(projects)
-
+console.log(projectIndex);
+console.log(projects);
 
 // Resets the form after the submit button is clicked
 function clearForm() {
-    formInputs.value = '';
+	formInputs.value = '';
 }

@@ -66,62 +66,60 @@
 		<!-- Projects page -->
 		<section class="projects-page hidden">
 			<h2 class="projects-title">My Projects</h2>
-            <div class="projects-wrapper">
+            <ul class="project-links">
                 <button onclick="nextProject(-1)" class="previous"><i class="left-arrow"></i></button>
-                <ul class="project-links">
-                    <li class="project-lis hidden">
-                        <div class="slide tamagotchi-icon">
-                            <p class="project-titles">Tamagotchi</p>
-                            <a class="game-container" href="#"><img src="/Assets/tamagotchi-preview.png" alt="tamagotchi icon" /></a>
-                            <p class="tamagotchi-description">
-                                A simple Tamagotchi game where you can interact with your own
-                                tamagotchi that changes as it gets older.
-                            </p>
-                        </div>
-                    </li>
+                <li class="project-lis hidden">
+                    <div class="slide tamagotchi-icon">
+                        <p class="project-titles">Tamagotchi</p>
+                        <a class="game-container" href="#"><img src="/Assets/tamagotchi-preview.png" alt="tamagotchi icon" /></a>
+                        <p class="tamagotchi-description">
+                            A simple Tamagotchi game where you can interact with your own
+                            tamagotchi that changes as it gets older.
+                        </p>
+                    </div>
+                </li>
 
-                    <li class="project-lis hidden">
-                        <div class="tic-tac-toe-icon">
-                            <p class="project-titles">Tic-Tac-Toe</p>
-                            <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon" alt="Tic-Tac-Toe icon"/></a>
-                            <p class="tic-tac-toe-description">
-                                A Tic-Tac-Toe game that allows you to choose your own characters.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+                <li class="project-lis hidden">
+                    <div class="tic-tac-toe-icon">
+                        <p class="project-titles">Tic-Tac-Toe</p>
+                        <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon" alt="Tic-Tac-Toe icon"/></a>
+                        <p class="tic-tac-toe-description">
+                            A Tic-Tac-Toe game that allows you to choose your own characters.
+                        </p>
+                    </div>
+                </li>
                 <button onclick="nextProject(-1)"class="next"><i class="right-arrow"></i></button>
-            </div>
+            </ul>
 		</section>
 
         <!-- Contact page -->
 		<section class="contact-page hidden">
-            <div class="contact-title-container">
-                <h2 class="contact-me-title">Contact Me</h2>
-                <p class="contact-me-subheader">Let's get in touch!</p>
-            </div>
+            <div class="contact-page-container">
+                <div class="contact-title-container">
+                    <h2 class="contact-me-title">Contact</h2>
+                    <p class="contact-me-subheader">Let's get in touch!</p>
+                </div>
 
-            <form
-            id="my-form"
-            action="https://formspree.io/f/xlezznnw"
-            method="POST"
-            >
-            <label for="name" class="label-text">
-              Your name:
-              <input class="inputs" type="input" name="name" placeholder="Enter name" required></s>
-            </label>
-            <label class="label-text">
-                Your email:
-                <input class="inputs" type="email" name="email" placeholder="Enter email" required>
-            </label>
-            <label class="label-text">
-              Your message:
-              <textarea class="inputs" type="text" name="message" placeholder="Enter message" required></textarea>
-            </label>
-            <button id="my-form-button" class="label-text send-button" type="submit">Send</button>
-            <p id="my-form-status"></p>
-            </form>
-            
+                <form
+                id="my-form"
+                action="https://formspree.io/f/xlezznnw"
+                method="POST"
+                >
+                <label for="name" class="label-text">
+                Your name:
+                <input class="inputs" type="input" name="name" placeholder="Enter name" required></s>
+                </label>
+                <label class="label-text">
+                    Your email:
+                    <input class="inputs" type="email" name="email" placeholder="Enter email" required>
+                </label>
+                <label class="label-text">
+                Your message:
+                <textarea class="inputs" type="text" name="message" placeholder="Enter message" required></textarea>
+                </label>
+                <button id="my-form-button" class="label-text send-button" type="submit">Send</button>
+                <p id="my-form-status"></p>
+                </form>
             </div>
         </section>
         <footer>
