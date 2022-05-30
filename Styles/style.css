@@ -183,7 +183,7 @@ input[type="reset"] {
 
 .project-links {
     height: 13em;
-    width: 70vh;
+    width: 60vw;
     display: flex;
     justify-content: space-between;
 }
@@ -192,8 +192,9 @@ input[type="reset"] {
     height: 12em;
 }
 
-.tamagotchi-li {
-    height: 13em;
+.project-lis {
+    display: flex;
+    justify-content: center;
 }
 
 .tamagotchi-icon {
@@ -209,10 +210,6 @@ input[type="reset"] {
     text-align: center;
     font-size: 1.1em;
     color: #000000;
-}
-
-.tic-tac-toe-li {
-    height: 13em;
 }
 
 .tic-tac-toe-icon {
