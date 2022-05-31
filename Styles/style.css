@@ -11,6 +11,7 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* background-image: url(/Assets/main-background.avif); */
 }
 
 h1 {
@@ -105,12 +106,37 @@ input[type="reset"] {
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    100% {
         opacity: 1;
     }
+}
+
+.animate {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+}
+
+@keyframes slide-in {
+100% {
+    transform: translateX(0%);
+}
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slider-item {
+    position: absolute;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
 }
 
 /* Nav page */
@@ -162,6 +188,15 @@ input[type="reset"] {
     justify-content: center;
     align-items: center;
     gap: 4em;
+    
+}
+
+.project-and-arrow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    width: 100vw;
 }
 
 .projects-title {
@@ -229,7 +264,7 @@ input[type="reset"] {
 .left-arrow{
     border: solid black;
     border-width: 0 3px 3px 0;
-    display: inline-block;
+    display: block;
     padding: 3px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
@@ -238,7 +273,7 @@ input[type="reset"] {
 .right-arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
-    display: inline-block;
+    display: block;
     padding: 3px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
