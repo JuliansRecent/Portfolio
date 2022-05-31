@@ -1,24 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/reset.css">
-    <link rel="stylesheet" href="/Styles/style.css">
-    <title>Julian Segura's Portfolio</title>
-</head>
-<body>
-    <!-- Hamburger icon -->
-    <button class="hamburger-icon-container nav-button"> <img src="/Assets/Hamburger_icon.svg.png" alt="Hamburger Icon" class="hamburger-icon"></button>
-    <!-- Name and title -->
-    <div class="name-and-title-container">
-        <h1>Julian Segura</h1>
-        <h2>Full Stack Developer</h2>
-    </div>
-    <!-- Nav page -->
-    <section class="nav-page">
-            
-    </section>
-</body>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/Styles/reset.css" />
+		<link rel="stylesheet" href="/Styles/style.css" />
+		<title>Julian Segura's Portfolio</title>
+		<script src="/JavaScript/script.js" defer></script>
+	</head>
+	<body>
+        <button class="hamburger-icon-container nav-button">
+                <img
+                    src="/Assets/Hamburger_icon.svg.png"
+                    alt="Hamburger Icon"
+                    class="hamburger-icon"
+                />
+        </button>
+		<!-- Hamburger icon -->
+        <section class="home-page animate">
+            <!-- Name and title -->
+            <div class="name-and-title-container">
+                <h1>Julian Segura</h1>
+                <h2>Full Stack Developer</h2>
+            </div>
+        </section>
+		<!-- Nav page -->
+		<section class="nav-page hidden animate">
+			<ul class="nav">
+				<li class="nav-items home-link"><a>Home</a></li>
+				<li class="nav-items about-me-link"><a>About</a></li>
+				<li class="nav-items resume-link">
+					<a href="/Assets/Julian-Seguras-Resume.pdf" target="_blank">Resume</a>
+				</li>
+				<li class="nav-items projects-link"><a>Projects</a></li>
+				<li class="nav-items contact-link"><a>Contact</a></li>
+			</ul>
+		</section>
+
+		<!-- About me page -->
+		<section class="about-me-page hidden animate">
+            <div class="collage-container">
+                <img class="collage" src="/Assets/picture-collage.png" alt="a picture collage">
+            </div>
+            <div class="title-and-brand-container">
+                <h2 class="who-am-i">About Me</h2>
+                <p class="brand-statement">
+                    Coming from the medical field, with attention to detail, and a creative
+                    mind. I strive to help build innovative technologies for the future. I
+                    love working with others to bring a common goal together and I bring
+                    this to my work as a software engineer.
+                </p>
+            </div>
+		</section>
+
+		<!-- Resume page placeholder -->
+		<section class="resume-page hidden"></section>
+
+		<!-- Projects page -->
+		<section class="projects-page hidden animate">
+			<h2 class="projects-title">My Projects</h2>
+            <div class="project-and-arrow-container">
+                <button onclick="nextProject(-1)" class="previous"><i class="left-arrow"></i></button>
+                <ul class="project-links">
+                    <li class="project-lis hidden">
+                        <div class="tamagotchi-icon slider-item slide-in">
+                            <p class="project-titles">Tamagotchi</p>
+                            <a class="game-container" href="#"><img src="/Assets/tamagotchi-preview.png" alt="tamagotchi icon" /></a>
+                            <p class="tamagotchi-description">
+                                A simple Tamagotchi game where you can interact with your own
+                                tamagotchi that changes as it gets older.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="project-lis hidden">
+                        <div class="tic-tac-toe-icon slider-item slide-in">
+                            <p class="project-titles">Tic-Tac-Toe</p>
+                            <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon"/></a>
+                            <p class="tic-tac-toe-description">
+                                A Tic-Tac-Toe game that allows you to choose your own characters.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            <button onclick="nextProject(+1)" class="next"><i class="right-arrow"></i></button>
+            </div>
+		</section>
+
+        <!-- Contact page -->
+		<section class="contact-page hidden animate">
+            <div class="contact-page-container">
+                <div class="contact-title-container">
+                    <h2 class="contact-me-title">Contact</h2>
+                    <p class="contact-me-subheader">Let's get in touch!</p>
+                </div>
+
+                <form
+                id="my-form"
+                action="https://formspree.io/f/xlezznnw"
+                method="POST"
+                >
+                <label for="name" class="label-text">
+                Your name:
+                <input class="inputs" type="input" name="name" placeholder="Enter name" required></s>
+                </label>
+                <label class="label-text">
+                    Your email:
+                    <input class="inputs" type="email" name="email" placeholder="Enter email" required>
+                </label>
+                <label class="label-text">
+                Your message:
+                <textarea class="inputs" type="text" name="message" placeholder="Enter message" required></textarea>
+                </label>
+                <button id="my-form-button" class="label-text send-button" type="submit">Send</button>
+                <p id="my-form-status"></p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="socials-container">
+                <a href="https://www.linkedin.com/in/julian-segura12/"><img class="social-icons" src="/Assets/LinkedIn-icon.png" alt="LinkedIn icon"></a>
+                <a href="https://twitter.com/JuliansRecent"><img class="social-icons" src="/Assets/Twitter-icon.png" alt="Twitter icon"></a>
+                <a href="https://github.com/JuliansRecent"><img class="social-icons" src="/Assets/Github-icon.png" alt="Github icon"></a>
+            </div>
+        </footer>
+        <!-- 
+            AJAX integration from FormSpree to accept forms
+            https://formspree.io/forms/xlezznnw/integration 
+            THIS IS NOT MY CODE :)
+        -->
+        <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+            } else {
+            response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+            })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+        }
+        form.addEventListener("submit", handleSubmit);
+        </script>
+	</body>
 </html>
