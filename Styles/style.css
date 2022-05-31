@@ -3,15 +3,14 @@
 }
 
 body, html {
-    height: 95vh;
-    width: 100%;
-    background-color: #cbd7ab;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* background-image: url(/Assets/main-background.avif); */
+    background-color: black;
 }
 
 h1 {
@@ -69,6 +68,13 @@ footer {
     opacity: 70%;
 }
 /* Home page */
+.home-page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/Assets/main-background.avif);
+    background-size: cover;
+}
+
 .name-and-title-container {
     display: flex;
     flex-direction: column;
@@ -141,11 +147,12 @@ input[type="reset"] {
 
 /* Nav page */
 .nav-page {
-    background-color: #cbd7ab;
+    background-color: #FDF5DF;
 }
 
 .nav {
-    height: 90vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,39 +163,63 @@ input[type="reset"] {
 .nav-items {
     font-size: 3em;
     font-family: 'Titillium Web', sans-serif;
-    color: black;
+    color: #6f84a1;
 }
 
 /* About me page */
+@media screen and (max-width:683px) {
+    .collage-container {
+        display: none;
+    }
+}
+
 .about-me-page {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 85vw;
+    width: 100vw;
+    background-color: #FDF5DF;
+}
+
+.collage-container {
+    height: 35em;
+}
+
+.collage {
+    height: 100%;
+}
+
+.title-and-brand-container {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
 }
 
 .who-am-i {
     color: #6f84a1;
     font-size: 3em;
+    text-align: center;
 }
 
 .brand-statement {
     font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    width: 15em;
+    max-width: 600px;
 }
 
 /* Projects page */
 .projects-page {
-    height: 90vh;            
+    height: 100vh;            
     display: flex;            
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4em;
-    
+    background-color: #FDF5DF;
 }
 
 .project-and-arrow-container {
@@ -286,6 +317,7 @@ input[type="reset"] {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color: #FDF5DF;
 }
 .contact-page-container {
     width: 100vw;
@@ -300,6 +332,10 @@ input[type="reset"] {
 .contact-title-container {
     display: flex;
     flex-direction: column;
+    width: 60vw;
+    max-width: 60vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-me-title {

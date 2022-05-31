@@ -20,26 +20,26 @@
 		<script src="/JavaScript/script.js" defer></script>
 	</head>
 	<body>
+        <button class="hamburger-icon-container nav-button">
+                <img
+                    src="/Assets/Hamburger_icon.svg.png"
+                    alt="Hamburger Icon"
+                    class="hamburger-icon"
+                />
+        </button>
 		<!-- Hamburger icon -->
-		<button class="hamburger-icon-container nav-button">
-			<img
-				src="/Assets/Hamburger_icon.svg.png"
-				alt="Hamburger Icon"
-				class="hamburger-icon"
-			/>
-		</button>
-
-		<!-- Name and title -->
-		<div class="name-and-title-container">
-			<h1>Julian Segura</h1>
-			<h2>Full Stack Developer</h2>
-		</div>
-
+        <section class="home-page animate">
+            <!-- Name and title -->
+            <div class="name-and-title-container">
+                <h1>Julian Segura</h1>
+                <h2>Full Stack Developer</h2>
+            </div>
+        </section>
 		<!-- Nav page -->
 		<section class="nav-page hidden animate">
 			<ul class="nav">
 				<li class="nav-items home-link"><a>Home</a></li>
-				<li class="nav-items about-me-link"><a>About Me</a></li>
+				<li class="nav-items about-me-link"><a>About</a></li>
 				<li class="nav-items resume-link">
 					<a href="/Assets/Julian-Seguras-Resume.pdf" target="_blank">Resume</a>
 				</li>
@@ -50,14 +50,18 @@
 
 		<!-- About me page -->
 		<section class="about-me-page hidden animate">
-			<h2 class="who-am-i">Who am I?</h2>
-			<br />
-			<p class="brand-statement">
-				Coming from the medical field, with attention to detail, and a creative
-				mind. I strive to help build innovative technologies for the future. I
-				love working with others to bring a common goal together and I bring
-				this to my work as a software engineer.
-			</p>
+            <div class="collage-container">
+                <img class="collage" src="/Assets/picture-collage.png" alt="a picture collage">
+            </div>
+            <div class="title-and-brand-container">
+                <h2 class="who-am-i">About Me</h2>
+                <p class="brand-statement">
+                    Coming from the medical field, with attention to detail, and a creative
+                    mind. I strive to help build innovative technologies for the future. I
+                    love working with others to bring a common goal together and I bring
+                    this to my work as a software engineer.
+                </p>
+            </div>
 		</section>
 
 		<!-- Resume page placeholder -->
@@ -83,14 +87,14 @@
                     <li class="project-lis hidden">
                         <div class="tic-tac-toe-icon slider-item slide-in">
                             <p class="project-titles">Tic-Tac-Toe</p>
-                            <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon" alt="Tic-Tac-Toe icon"/></a>
+                            <a class="game-container" href="#"><img src="/Assets/tic-tac-toe-preview.png" alt="tic-tac-toe-icon"/></a>
                             <p class="tic-tac-toe-description">
                                 A Tic-Tac-Toe game that allows you to choose your own characters.
                             </p>
                         </div>
                     </li>
                 </ul>
-            <button onclick="nextProject(+1)"class="next"><i class="right-arrow"></i></button>
+            <button onclick="nextProject(+1)" class="next"><i class="right-arrow"></i></button>
             </div>
 		</section>
 

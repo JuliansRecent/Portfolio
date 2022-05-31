@@ -5,7 +5,7 @@ const navPage = document.querySelector('.nav-page');
 const navButton = document.querySelector('.nav-button');
 
 // Main  page and it's nav button
-const mainPage = document.querySelector('.name-and-title-container');
+const mainPage = document.querySelector('.home-page');
 const homeButton = document.querySelector('.home-link');
 
 // About me page and it's nav button
@@ -101,9 +101,6 @@ function showProjects(n) {
 	}
 	projects[projectIndex - 1].style.display = 'flex';
 }
-
-console.log(projectIndex);
-console.log(projects);
 
 // Resets the form after the submit button is clicked
 function clearForm() {
