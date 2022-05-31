@@ -2,11 +2,11 @@
 
 This is my portfolio website.
 
-![]("/Assets/home-page.png")
-![]("/Assets/nav-page.png")
-![]("/Assets/about-me-page.png")
-![]("/Assets/project-page.png")
-![]("/Assets/contact-page.png")
+![](/Assets/home-page.png)
+![](/Assets/nav-page.png)
+![](/Assets/about-me-page.png)
+![](/Assets/project-page.png)
+![](/Assets/contact-page.png)
 
 ## Technologies
 
@@ -33,10 +33,10 @@ As a user, I want a responsive design for most platforms, so that it can be view
 
 ## Wireframes
 
-![]("/Assets/Wireframe1.png")
-![]("/Assets/Wireframe2.png")
-![]("/Assets/Wireframe3.png")
-![]("/Assets/Wireframe4.png")
+![](/Assets/Wireframe1.png)
+![](/Assets/Wireframe2.png)
+![](/Assets/Wireframe3.png)
+![](/Assets/Wireframe4.png)
 
 ## Major hurdles
 
