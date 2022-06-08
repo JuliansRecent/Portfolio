@@ -72,7 +72,7 @@ footer {
 .home-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(/Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover;
 }
 
@@ -148,7 +148,7 @@ input[type="reset"] {
 
 /* Nav page */
 .nav-page {
-    background-image: url(/Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover; 
 }
 
@@ -182,7 +182,7 @@ input[type="reset"] {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: url(/Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover;
 }
 
@@ -223,7 +223,7 @@ input[type="reset"] {
     justify-content: center;
     align-items: center;
     gap: 4em;
-    background-image: url(/Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover;
 }
 
@@ -323,7 +323,7 @@ input[type="reset"] {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(/Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover;
 }
 .contact-page-container {
