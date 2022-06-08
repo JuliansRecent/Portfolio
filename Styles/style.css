@@ -10,7 +10,7 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(36, 44, 53);
 }
 
 h1 {
@@ -45,13 +45,14 @@ form {
     border-radius: 8px;
     max-width: 500px;
     height: 63vh;
+    background-color: rgba(201, 210, 220, 0.3);
 }
 
 input, textarea {
         font-family: inherit;
         width: 100%;
         border: 0;
-        border-bottom: .1em solid gray;
+        border-bottom: .13em solid black;
         outline: 0;
         font-size: .8em;
         color: black;
@@ -71,7 +72,7 @@ footer {
 .home-page {
     height: 100vh;
     width: 100vw;
-    background-image: url(Assets/main-background.avif);
+    background-image: url(Assets/main-background.jpg);
     background-size: cover;
 }
 
@@ -147,7 +148,8 @@ input[type="reset"] {
 
 /* Nav page */
 .nav-page {
-    background-color: #FDF5DF;
+    background-image: url(Assets/main-background.jpg);
+    background-size: cover; 
 }
 
 .nav {
@@ -180,7 +182,8 @@ input[type="reset"] {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #FDF5DF;
+    background-image: url(Assets/main-background.jpg);
+    background-size: cover;
 }
 
 .collage-container {
@@ -198,7 +201,7 @@ input[type="reset"] {
 }
 
 .who-am-i {
-    color: #6f84a1;
+    color: #8b9db7;
     font-size: 3em;
     text-align: center;
 }
@@ -209,6 +212,7 @@ input[type="reset"] {
     text-align: center;
     width: 15em;
     max-width: 600px;
+    color: white;
 }
 
 /* Projects page */
@@ -219,7 +223,8 @@ input[type="reset"] {
     justify-content: center;
     align-items: center;
     gap: 4em;
-    background-color: #FDF5DF;
+    background-image: url(Assets/main-background.jpg);
+    background-size: cover;
 }
 
 .project-and-arrow-container {
@@ -242,7 +247,7 @@ input[type="reset"] {
 
 .project-titles {
     font-size: 1.7em;
-    color: #a84b67;
+    color: whitesmoke;
 }
 
 .project-links {
@@ -260,6 +265,7 @@ input[type="reset"] {
 .project-lis {
     display: flex;
     justify-content: center;
+    height: 1em;
 }
 
 .tamagotchi-icon {
@@ -274,7 +280,7 @@ input[type="reset"] {
 .tamagotchi-description {
     text-align: center;
     font-size: 1.1em;
-    color: #000000;
+    color: whitesmoke;
 }
 
 .tic-tac-toe-icon {
@@ -289,11 +295,11 @@ input[type="reset"] {
 .tic-tac-toe-description {
     text-align: center;
     font-size: 1.1em;
-    color: #000000;
+    color: whitesmoke;
 }
 
 .left-arrow{
-    border: solid black;
+    border: solid whitesmoke;
     border-width: 0 3px 3px 0;
     display: block;
     padding: 3px;
@@ -302,7 +308,7 @@ input[type="reset"] {
 }
 
 .right-arrow {
-    border: solid black;
+    border: solid whitesmoke;
     border-width: 0 3px 3px 0;
     display: block;
     padding: 3px;
@@ -317,7 +323,8 @@ input[type="reset"] {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: #FDF5DF;
+    background-image: url(Assets/main-background.jpg);
+    background-size: cover;
 }
 .contact-page-container {
     width: 100vw;
@@ -351,14 +358,14 @@ input[type="reset"] {
 
 .label-text {
     font-size: 1.7em;
-    color: #a84b67;
+    color: whitesmoke;
 }
 
 .send-button {
-    background-color: rgba(105, 109, 114, 0.376);
+    background-color: whitesmoke;
     border: 0.1em solid rgba(0, 0, 0, 0.4);
     border-radius: .25rem;
-    color: #a84b67;
+    color: #6f84a1;
     display: inline-flex;
     font-size: 1em;
     font-weight: 600;
